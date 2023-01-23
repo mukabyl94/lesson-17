@@ -1,10 +1,15 @@
 package animal;
 
-public class Hours extends Animal{
-    public Hours(String nickName, double weight, int age, String gender) {
+public class Horse extends Animal{
+    public Horse(String nickName, double weight, int age, String gender) {
         super(nickName, weight, age, gender);
     }
 
-    public Hours() {
+    public Horse() {
+    }
+    @Override
+    public String toString() {
+        return "Horse: " + "NickName: " + getNickName() + " Weight: " + getWeight() +
+                " Age: " + getAge() + " Gender: " + getGender();
     }
 }
